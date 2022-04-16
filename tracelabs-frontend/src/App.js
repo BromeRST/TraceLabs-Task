@@ -5,7 +5,7 @@ import abi from "./utils/traceLabsContractABI.json";
 import erc20abi from "./utils/ERC20ABI.json";
 
 const TOKEN_CONTRACT_ADDRESS = "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735"; //TODO: change token contract address (this is rinkeby DAI)
-const MAIN_CONTRACT_ADDRESS = "0x04ddE0c47359112797d065707Baf694D7B68Bb2A"; //TODO: change contract address after deploy
+const MAIN_CONTRACT_ADDRESS = "0xEf937d5Ae416F3f73E55a53D2Bb5d0ea03253496"; //TODO: change contract address after deploy
 
 function App() {
   const [currentAccount, setCurrentAccount] = useState(null);

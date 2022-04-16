@@ -4,6 +4,7 @@ const { getContractAddress } = require('@ethersproject/address')
 async function main() {
 
   const TEN_MINUTES_IN_SECONDS = 600; //TODO: change it to change contract periods of time
+  const DAY_IN_SECONDS = 86400;
   const TOKEN_RINKEBY_ADDRESS = "0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735"; //TODO: insert ERC20 token address (in this case is RINKEBY DAI)
   const deposit = ethers.utils.parseEther("1000");
 
@@ -20,7 +21,7 @@ async function main() {
   await daiContract.approve(futureAddress, deposit);
 
   const TraceLabs = await hre.ethers.getContractFactory("TraceLabs", deployer);
-  const traceLabs = await TraceLabs.deploy(TEN_MINUTES_IN_SECONDS, deposit, TOKEN_RINKEBY_ADDRESS);
+  const traceLabs = await TraceLabs.deploy(DAY_IN_SECONDS * 3, deposit, TOKEN_RINKEBY_ADDRESS);
 
   await traceLabs.deployed();
 
