@@ -1,0 +1,154 @@
+:root {
+  --col-pink-300: #fa34f3;
+  --col-pink-400: #cf15f9;
+  --col-pink-500: #ac15f9;
+  --col-default-pink: #fa34f3;
+  --theme-body-bg: var(--col-pink-300);
+  --landing-footer-bg: var(--col-pink-300);
+  --theme-balance-gradient-2: var(--col-pink-300);
+  --theme-scroll-touch: var(--col-pink-300);
+  --theme-dark-pink: var(--col-pink-400);
+  --col-cyan-50: #5f9495;
+  --col-cyan-100: #219497;
+  --col-cyan-200: #04b7bc;
+  --col-cyan-300: #98fcff;
+  --col-cyan-400: #81cdcf;
+  --col-cyan-500: #37f4f1;
+  --col-cyan-600: #0ff;
+  --equip-item: var(--col-cyan-100);
+  --theme-cyan: var(--col-cyan-200);
+  --theme-game-bg: var(--col-cyan-200);
+  --theme-item-bg: var(--col-cyan-400);
+  --theme-light-cyan: var(--col-cyan-50);
+  --theme-learn-1: var(--col-cyan-300);
+  --col-blue-400: #6db5f7;
+  --col-blue-500: #5891f3;
+  --col-blue-600: #7f96fa;
+  --theme-learn-2: var(--col-blue-400);
+  --theme-learn-3: var(--col-blue-500);
+  --theme-learn-4: var(--col-blue-600);
+  --col-yellow-100: #fffa65;
+  --col-yellow-200: #e5df40;
+  --theme-yellow: var(--col-yellow-100);
+  --theme-game-border: var(--col-yellow-100);
+  --theme-page-title-border: var(--col-yellow-200);
+  --theme-header-border: var(--col-yellow-200);
+  --col-purple-200: #b995fc;
+  --col-purple-250: #b174fa;
+  --col-purple-260: #8f17f9;
+  --col-purple-270: #7e18f8;
+  --col-purple-280: #730cee;
+  --col-purple-300: #7217f4;
+  --col-purple-320: #7217f4;
+  --col-purple-350: #7100eb;
+  --col-purple-400: #722cf0;
+  --col-purple-450: #6d18f8;
+  --col-purple-500: #5100b1;
+  --col-purple-600: #4c1f7d;
+  --col-purple-700: rgba(76, 31, 125, 0.9);
+  --col-text-purple: var(--col-purple-300);
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  background-color: white;
+  color: white;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  background: var(--col-yellow-100);
+  border-bottom: 5px solid var(--col-yellow-200);
+  padding: 25px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-name {
+  color: var(--col-purple-700);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.primary-button {
+  padding: 15px 30px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  background: var(--theme-body-bg);
+  border: 5px solid var(--bs-gray-800);
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #8f17f9;
+}
+
+.primary-button:active {
+  opacity: 0.8;
+}
+
+.secondary-button {
+  padding: 10px 20px;
+  box-shadow: none;
+  font-family: "Press Start 2P", cursive;
+  background: var(--col-pink-400);
+  border: 3px solid var(--bs-gray-800);
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: white;
+  margin-left: 20px;
+}
+
+.secondary-button:hover {
+  background: #6f42c1;
+}
+
+.secondary-button:active {
+  opacity: 0.8;
+}
+
+.deposit-input-div {
+  display: flex;
+  margin: 200px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid #4c1f7d;
+  text-align: center;
+}
+
+.timeWithdraw {
+  margin: 20px auto;
+  color: #cf15f9;
+  font-size: 16px;
+}
+
+.time-div {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
